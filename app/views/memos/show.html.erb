@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>氏名:</strong>
+  <%= @memo.title %>
+</p>
+
+<p>
+  <strong>銀行:</strong>
+  <%= @memo.bank %>
+</p>
+
+<p>
+  <strong>財布:</strong>
+  <%= @memo.wallet %>
+</p>
+
+<%= link_to 'Edit', edit_memo_path(@memo) %> |
+<%= link_to 'Back', memos_path %>
